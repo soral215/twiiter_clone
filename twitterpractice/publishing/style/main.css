@@ -1,0 +1,250 @@
+/* 전체 도큐먼트에 중복 할당되는 클래스 */
+.btn {
+  height: 30px;
+  width: 25px;
+  height: 25px;
+  margin: 15px 10px 15px 10px;
+}
+
+.userName,
+.userId,
+.bold {
+  font-weight: 700;
+}
+
+.userInfo {
+  position: relative;
+  height: 180px;
+}
+
+.userInfo .userProfile {
+  border-radius: 50%;
+}
+
+.userInfo .textArea {
+  padding-left: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* 본문 */
+body {
+  width: 100%;
+  margin: 0;
+}
+
+/* 네비 바 */
+nav {
+  position: fixed;
+  margin: 0;
+  height: 112px;
+  width: 100%;
+  top: 0px;
+  background-color: #ffffff;
+  z-index: 1000;
+}
+
+.navWrapper {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 615px;
+  height: 54px;
+  top: 0;
+  margin: 0 auto;
+}
+
+.navRight img {
+  margin-right: 6px;
+}
+
+.navMenu {
+  width: 130px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ebeef0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.clicked {
+  color: #1da1f2;
+  border-bottom: 2px solid #1da1f2;
+}
+
+.search {
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 300px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #ebeef0;
+  cursor: text;
+}
+
+.search.active {
+  display: flex;
+  justify-content: start;
+}
+
+.magnifier.active {
+  position: absolute;
+  left: 10px;
+  margin-left: 10px;
+}
+
+.magnifier {
+  justify-content: center;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 10px;
+  left: 80px;
+  margin: auto 0;
+  background-image: url("../img/magnifier.png");
+  background-size: cover;
+}
+
+.searchInput.active {
+  margin-left: 40px;
+  color: #797878;
+  border: none;
+  background-color: #ebeef0;
+  text-align: left;
+}
+
+.searchInput {
+  width: 60%;
+  margin: 0 3px;
+  color: #797878;
+  border: none;
+  background-color: #ebeef0;
+  text-align: center;
+}
+
+/* 메인 시작 */
+main {
+  width: 100%;
+  height: 100rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.feeds {
+  width: 615px;
+  border-left: 1px solid #ebeef0;
+  border-right: 1px solid #ebeef0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* 아티클 */
+article {
+  display: flex;
+}
+
+.userComment {
+  margin-top: 5px;
+}
+
+.commentSet {
+  margin-top: 5px;
+}
+
+.articleHeader {
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+  width: 100%;
+}
+
+.articleHeader .userInfo {
+  display: flex;
+  margin-top: 130px;
+  flex-direction: row;
+
+  border-bottom: 1px solid #ebeef0;
+}
+
+.articleHeader .userProfile {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  margin-left: 5px;
+}
+
+.articleHeader img {
+  width: 30px;
+  height: 30px;
+}
+
+.textArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.articleImg {
+  width: 614px;
+}
+
+.articleFooter {
+  width: 100%;
+  padding: 4px 8px 0px 8px;
+}
+
+.iconbar {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 40px;
+  width: 90%;
+}
+
+.iconbar .btn {
+  margin: auto 8px;
+}
+
+.iconWrapper {
+  height: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  flex-direction: row;
+}
+
+.comment {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.commentForm {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border-top: 1px solid lightgray;
+}
+
+.commentInput {
+  width: 100%;
+  height: 100%;
+  border: none;
+}

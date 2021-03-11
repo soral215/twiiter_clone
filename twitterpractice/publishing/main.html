@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>트위터</title>
+  <link href="style/common.css" rel="stylesheet" type="text/css" />
+  <link href="style/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <nav>
+    <form class="search">
+      <div class="magnifier"></div>
+      <input type="text" autocapitalize="none" placeholder="검색" class="searchInput">
+      <span class="xbtn"></span>
+      <div class="searchResultList displayNone">
+      </div>
+    </form>
+    <div class="navWrapper">
+        <span class="navMenu clicked">인기</span>
+        <span class="navMenu">최신</span>
+        <span class="navMenu">사용자</span>
+        <span class="navMenu">사진</span>
+        <span class="navMenu">동영상</span>
+       
+    </div>
+  </nav>
+  <main>
+   <div class="feeds">
+      <article>
+        <div class="articleHeader">
+          <div class="userInfo">
+            <img src="img/userProfile.jpg" alt="userProfile" class="userProfile middle">
+            <div class="commentSet">
+              <div class="comment">
+                <div class="commentSet">
+                  <span class="userId">aram</span>
+                  <span>@baba</span>
+                  <span>3월 11일</span>
+                  <div class="userComment">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Deserunt quibusdam porro, libero dolorem ea recusandae nulla vitae non, laudantium in iste! 
+                    Explicabo reiciendis est incidunt quam fugiat quibusdam? Quia, porro!</div>
+                  <div class="iconbar">
+                    <div class="iconWrapper">
+                       <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png" alt="comment"
+                        class="btn comment">
+                       <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png" alt="bookmark"
+                          class="btn bookmark">
+                       <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="heart" class="btn heart">
+                       <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png" alt="share" class="btn share">
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+        
+       </article>
+           
+     </div>
+    </div>
+  </main>
+  <script src="js/main.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+
+</html>
